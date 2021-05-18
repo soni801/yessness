@@ -17,9 +17,23 @@ body
     height: 100vh;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: rgb(var(--light));
+    text-align: center;
+}
+
+body > h1
+{
+    font-size: 4.5em;
+    padding-bottom: 0;
+    text-shadow: rgba(var(--dark), .2) 0 0 1rem;
+}
+
+#cards
+{
+    display: flex;
 }
 
 a
@@ -33,9 +47,10 @@ a
     text-shadow: rgba(var(--dark), .1) 0 0 .5rem;
     width: 23rem;
     height: 32rem;
+    text-align: left;
 }
 
-a h1, a p
+h1, p
 {
     padding: 1rem;
     margin: 0;
