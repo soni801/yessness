@@ -8,6 +8,13 @@ html
     --little: #171752;
     --mrcat: #fbb22c;
     --soni: #3ba3a1;
+
+    --henrik: #bc4d3b;
+    --erik: #355c3e;
+    --kristoffer: #010317;
+    --kristian: #242424;
+    --ellinor: #d1899d;
+    --anders: #34646d;
 }
 
 body
@@ -22,12 +29,14 @@ body
     align-items: center;
     background: rgb(var(--light));
     text-align: center;
+    user-select: none;
+    margin: 0;
 }
 
 body > h1
 {
     font-size: 4.5em;
-    padding-bottom: 0;
+    padding: 0;
     text-shadow: rgba(var(--dark), .2) 0 0 1rem;
 }
 
@@ -39,6 +48,7 @@ body > h1
 a
 {
     margin: 1rem;
+    display: inline-block;
     color: rgb(var(--dark));
     text-decoration: none;
     border-radius: 3rem;
@@ -48,6 +58,31 @@ a
     width: 23rem;
     height: 32rem;
     text-align: left;
+    transition: 300ms ease;
+}
+
+a:hover
+{
+    transform: scale(1.08);
+}
+
+#toasts
+{
+    padding: 1em;
+}
+
+#toasts > a
+{
+    padding: .5em 1em;
+    margin: .5em;
+    box-shadow: rgba(var(--dark), .2) 0 0 1rem;
+    width: initial;
+    height: initial;
+}
+
+#toasts > a:hover
+{
+    transform: scale(1.2);
 }
 
 h1, p
@@ -76,4 +111,38 @@ a img
 #soni
 {
     background: var(--soni);
+}
+
+#henrik
+{
+    background: var(--henrik);
+}
+
+#erik
+{
+    background: var(--erik);
+    color: rgb(var(--light));
+}
+
+#kristoffer
+{
+    background: var(--kristian);
+    color: rgb(var(--light));
+}
+
+#kristian
+{
+    background: var(--kristian);
+    color: rgb(var(--light));
+}
+
+#ellinor
+{
+    background: var(--ellinor);
+}
+
+#anders
+{
+    background: var(--anders);
+    color: rgb(var(--light));
 }
