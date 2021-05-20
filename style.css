@@ -15,6 +15,7 @@ html
     --kristian: #242424;
     --ellinor: #d1899d;
     --anders: #34646d;
+    --patrick: #1c2541;
 }
 
 body
@@ -155,5 +156,11 @@ a img
 #anders
 {
     background: var(--anders);
+    color: rgb(var(--light));
+}
+
+#patrick
+{
+    background: var(--patrick);
     color: rgb(var(--light));
 }
