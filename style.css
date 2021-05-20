@@ -11,7 +11,7 @@ html
 
     --henrik: #bc4d3b;
     --erik: #355c3e;
-    --kristoffer: #010317;
+    --kristoffer: #66729d;
     --kristian: #242424;
     --ellinor: #d1899d;
     --anders: #34646d;
@@ -126,7 +126,7 @@ a img
 
 #kristoffer
 {
-    background: var(--kristian);
+    background: var(--kristoffer);
     color: rgb(var(--light));
 }
 
