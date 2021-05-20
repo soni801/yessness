@@ -40,6 +40,11 @@ body > h1
     text-shadow: rgba(var(--dark), .2) 0 0 1rem;
 }
 
+body > p
+{
+    text-shadow: rgba(var(--dark), .2) 0 0 .5rem;
+}
+
 #cards
 {
     display: flex;
@@ -95,6 +100,12 @@ a img
 {
     width: 100%;
     box-shadow: rgba(var(--dark), .1) 0 0 .7rem;
+}
+
+#partners
+{
+    color: rgba(var(--dark), .5);
+    margin-bottom: -2em;
 }
 
 #little
