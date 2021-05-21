@@ -40,11 +40,15 @@ body > h1
     margin-bottom: -1.5rem;
     padding: 0;
     text-shadow: rgba(var(--dark), .2) 0 0 1rem;
+    opacity: 0;
+    transition: 300ms ease;
 }
 
 body > p
 {
     text-shadow: rgba(var(--dark), .1) 0 0 .5rem;
+    opacity: 0;
+    transition: 300ms ease;
 }
 
 #cards
