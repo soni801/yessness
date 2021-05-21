@@ -36,14 +36,15 @@ body
 
 body > h1
 {
-    font-size: 4.5em;
+    font-size: 4em;
+    margin-bottom: -1.5rem;
     padding: 0;
     text-shadow: rgba(var(--dark), .2) 0 0 1rem;
 }
 
 body > p
 {
-    text-shadow: rgba(var(--dark), .2) 0 0 .5rem;
+    text-shadow: rgba(var(--dark), .1) 0 0 .5rem;
 }
 
 #cards
@@ -65,6 +66,8 @@ a
     height: 32rem;
     text-align: left;
     transition: 300ms ease;
+    opacity: 0;
+    transform: translate(0, 2rem);
 }
 
 a:hover
@@ -107,6 +110,13 @@ a img
 {
     color: rgba(var(--dark), .6);
     margin-bottom: -2em;
+}
+
+#notice
+{
+    color: rgba(var(--dark), .6);
+    position: fixed;
+    bottom: 0;
 }
 
 #little
