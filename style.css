@@ -72,11 +72,7 @@ a
     transition: 300ms ease;
     opacity: 0;
     transform: translate(0, 2rem);
-}
-
-a:hover
-{
-    transform: scale(1.08);
+    transform-style: preserve-3d;
 }
 
 #toasts
@@ -102,6 +98,7 @@ h1, p
 {
     padding: 1rem;
     margin: 0;
+    transform: translateZ(20px);
 }
 
 a img

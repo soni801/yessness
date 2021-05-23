@@ -7,7 +7,7 @@ function transitionLinks()
     setTimeout(function()
     {
         links[i].style.opacity = "1";
-        links[i].style.transform = "none";
+        links[i].style.transform = "perspective(1000px)";
         i++;
         if (i < links.length) transitionLinks();
     }, 30);
@@ -29,3 +29,13 @@ setTimeout(function ()
     i = 0;
     transitionLinks();
 }, 500);
+
+VanillaTilt.init(links,
+    {
+        max: 8,
+        speed: 500,
+        scale: 1.08,
+        glare: true,
+        "max-glare": .2,
+        gyroscope: false
+    });
