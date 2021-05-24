@@ -21,9 +21,7 @@ html
 body
 {
     font-family: 'Nunito', sans-serif;
-    width: 100vw;
     height: 100vh;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,6 +68,10 @@ body > p
 #cards
 {
     display: flex;
+    width: 85vw;
+    height: min-content;
+    justify-content: center;
+    align-items: center;
 }
 
 a
@@ -81,8 +83,9 @@ a
     border-radius: 3rem;
     box-shadow: rgba(var(--dark), .4) 0 0 2rem;
     text-shadow: rgba(var(--dark), .25) 0 0 .5rem;
-    width: 23rem;
-    height: 32rem;
+    width: 100%;
+    height: 100%;
+    max-width: 40ch;
     text-align: left;
     opacity: 0;
     transform: translate(0, 2rem);
