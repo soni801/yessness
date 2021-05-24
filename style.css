@@ -63,9 +63,8 @@ a
     color: rgb(var(--dark));
     text-decoration: none;
     border-radius: 3rem;
-    overflow: hidden;
     box-shadow: rgba(var(--dark), .4) 0 0 2rem;
-    text-shadow: rgba(var(--dark), .1) 0 0 .5rem;
+    text-shadow: rgba(var(--dark), .25) 0 0 .5rem;
     width: 23rem;
     height: 32rem;
     text-align: left;
@@ -93,23 +92,24 @@ a
     transform: scale(1.2);
 }
 
-h1, p
+a > h1, a > p
 {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     margin: 0;
-    transform: translateZ(20px);
+    transform: translateZ(1.5rem);
 }
 
 a img
 {
     width: 100%;
     box-shadow: rgba(var(--dark), .1) 0 0 .7rem;
+    border-radius: 3rem 3rem 0 0;
 }
 
 #partners
 {
     color: rgba(var(--dark), .6);
-    margin-bottom: -2em;
+    margin-bottom: -1em;
 }
 
 #notice
