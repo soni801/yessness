@@ -36,7 +36,8 @@ body
 {
     position: fixed;
     display: flex;
-    gap: 1ch;
+    flex-direction: column;
+    line-height: .3em;
     font-size: 3rem;
     color: rgb(var(--dark));
 }
@@ -50,12 +51,7 @@ body
 
 #old
 {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: unset;
-    height: unset;
-    box-shadow: unset;
+    display: none;
 }
 
 body > h1
@@ -78,7 +74,7 @@ body > p
 #cards
 {
     display: flex;
-    width: 85vw;
+    flex-direction: column;
     height: min-content;
     justify-content: center;
     align-items: center;
@@ -86,34 +82,29 @@ body > p
 
 a
 {
-    margin: 1rem;
+    margin: 0;
     display: inline-block;
     color: rgb(var(--dark));
     text-decoration: none;
-    border-radius: 3rem;
-    box-shadow: rgba(var(--dark), .4) 0 0 2rem;
     text-shadow: rgba(var(--dark), .25) 0 0 .5rem;
     width: 100%;
-    height: 100%;
-    max-width: 40ch;
     text-align: left;
     opacity: 0;
     transform: translate(0, 2rem);
-    transform-style: preserve-3d;
 }
 
 #toasts
 {
-    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
 #toasts > a
 {
-    padding: .5em 1em;
-    margin: .5em;
-    box-shadow: rgba(var(--dark), .2) 0 0 1rem;
-    width: initial;
-    height: initial;
+    margin: 0;
+    flex: 1 1 calc(50% - 2em);
+    padding: 1em;
 }
 
 #toasts > a:hover
@@ -121,18 +112,22 @@ a
     transform: scale(1.2);
 }
 
-a > h1, a > p
+a > h1
 {
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
     margin: 0;
-    transform: translateZ(1.5rem);
+    font-size: 3rem;
+}
+
+a > p
+{
+    padding: 0 1.5rem 1.5rem;
+    margin: -1rem 0 0;
 }
 
 a img
 {
-    width: 100%;
-    box-shadow: rgba(var(--dark), .1) 0 0 .7rem;
-    border-radius: 3rem 3rem 0 0;
+    display: none;
 }
 
 #partners
@@ -144,8 +139,84 @@ a img
 #notice
 {
     color: rgba(var(--dark), .6);
-    position: fixed;
-    bottom: 0;
+    padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 750px)
+{
+    #welcome
+    {
+        flex-direction: row;
+        gap: 1ch;
+    }
+
+    #old
+    {
+        display: unset;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: unset;
+        height: unset;
+        box-shadow: unset;
+    }
+
+    #cards
+    {
+        flex-direction: row;
+        width: 95vw;
+    }
+
+    a
+    {
+        margin: 1rem;
+        border-radius: 3rem;
+        box-shadow: rgba(var(--dark), .4) 0 0 2rem;
+        height: 100%;
+        max-width: 40ch;
+        transform-style: preserve-3d;
+    }
+
+    #toasts
+    {
+        display: initial;
+        padding: 1em;
+    }
+
+    #toasts > a
+    {
+        padding: .5em 1em;
+        margin: .5em;
+        box-shadow: rgba(var(--dark), .2) 0 0 1rem;
+        width: initial;
+        height: initial;
+    }
+
+    a > h1, a > p
+    {
+        padding: 1rem 1.5rem;
+        margin: 0;
+        transform: translateZ(1.5rem);
+    }
+
+    a > h1
+    {
+        font-size: 2rem;
+    }
+
+    a img
+    {
+        display: unset;
+        width: 100%;
+        box-shadow: rgba(var(--dark), .1) 0 0 .7rem;
+        border-radius: 3rem 3rem 0 0;
+    }
+
+    #notice
+    {
+        position: fixed;
+        bottom: 0;
+    }
 }
 
 #little
