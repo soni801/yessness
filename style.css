@@ -48,6 +48,16 @@ body
     transition: 600ms ease;
 }
 
+#old
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: unset;
+    height: unset;
+    box-shadow: unset;
+}
+
 body > h1
 {
     font-size: 4em;
