@@ -69,7 +69,6 @@ a
     width: 23rem;
     height: 32rem;
     text-align: left;
-    transition: 300ms ease;
     opacity: 0;
     transform: translate(0, 2rem);
     transform-style: preserve-3d;

@@ -6,6 +6,7 @@ function transitionLinks()
 {
     setTimeout(function()
     {
+        links[i].style.transition = "300ms ease";
         links[i].style.opacity = "1";
         links[i].style.transform = "perspective(1000px)";
         i++;
