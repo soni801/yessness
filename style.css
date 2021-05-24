@@ -34,6 +34,22 @@ body
     margin: 0;
 }
 
+#welcome
+{
+    position: fixed;
+    display: flex;
+    gap: 1ch;
+    font-size: 3rem;
+    color: rgb(var(--dark));
+}
+
+#welcome h1
+{
+    opacity: 0;
+    transform: translate(0, 1rem);
+    transition: 600ms ease;
+}
+
 body > h1
 {
     font-size: 4em;
