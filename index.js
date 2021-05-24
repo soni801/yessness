@@ -33,9 +33,9 @@ setTimeout(function ()
 
 VanillaTilt.init(links,
     {
-        max: 8,
+        max: 5,
         speed: 500,
-        scale: 1.08,
+        scale: 1.07,
         glare: true,
         "max-glare": .2,
         gyroscope: false
