@@ -16,6 +16,7 @@ html
     --ellinor: #d1899d;
     --anders: #34646d;
     --patrick: #1c2541;
+    --katrine: #866369;
 }
 
 body
@@ -105,11 +106,6 @@ a
     margin: 0;
     flex: 1 1 calc(50% - 2em);
     padding: 1em;
-}
-
-#toasts > a:hover
-{
-    transform: scale(1.2);
 }
 
 a > h1
@@ -273,5 +269,11 @@ a img
 #patrick
 {
     background: var(--patrick);
+    color: rgb(var(--light));
+}
+
+#katrine
+{
+    background: var(--katrine);
     color: rgb(var(--light));
 }
