@@ -31,6 +31,7 @@ body
     text-align: center;
     user-select: none;
     margin: 0;
+    color: rgb(var(--dark));
 }
 
 #welcome
@@ -40,7 +41,6 @@ body
     flex-direction: column;
     line-height: .3em;
     font-size: 3rem;
-    color: rgb(var(--dark));
 }
 
 #welcome h1
