@@ -1,5 +1,7 @@
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
+/* Variables */
 html
 {
     --light: 240, 239, 244;
@@ -20,6 +22,7 @@ html
     --elias: #0895ca;
 }
 
+/* General styling */
 body
 {
     font-family: 'Nunito', sans-serif;
@@ -35,11 +38,13 @@ body
     color: rgb(var(--dark));
 }
 
+/* Link to old design */
 #old
 {
     display: none;
 }
 
+/* Text styling */
 body > h1
 {
     font-size: 4em;
@@ -57,6 +62,7 @@ body > p
     transition: 300ms ease;
 }
 
+/* Card styling */
 #cards
 {
     display: flex;
@@ -79,6 +85,7 @@ a
     transform: translate(0, 20px);
 }
 
+/* Toasts (small cards) styling */
 #toasts
 {
     display: flex;
@@ -111,6 +118,7 @@ a img
     display: none;
 }
 
+/* Notice styling */
 #partners
 {
     color: rgba(var(--dark), .6);
@@ -123,6 +131,7 @@ a img
     padding-bottom: 1rem;
 }
 
+/* Desktop styling */
 @media only screen and (min-width: 750px)
 {
     #welcome
@@ -201,6 +210,7 @@ a img
     }
 }
 
+/* Partner specific styling */
 #little
 {
     background: var(--little);
