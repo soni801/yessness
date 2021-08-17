@@ -17,6 +17,7 @@ html
     --anders: #34646d;
     --patrick: #1c2541;
     --katrine: #866369;
+    --elias: #0895ca;
 }
 
 body
@@ -275,5 +276,11 @@ a img
 #katrine
 {
     background: var(--katrine);
+    color: rgb(var(--light));
+}
+
+#elias
+{
+    background: var(--elias);
     color: rgb(var(--light));
 }
