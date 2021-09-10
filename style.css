@@ -119,17 +119,10 @@ a img
     display: none;
 }
 
-/* Notice styling */
 #partners
 {
     color: rgba(var(--dark), .6);
     margin-bottom: -1em;
-}
-
-#notice
-{
-    color: rgba(var(--dark), .6);
-    padding-bottom: 1rem;
 }
 
 /* Desktop styling */
