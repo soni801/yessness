@@ -1,14 +1,31 @@
-/* Import fonts */
+/* Author: Soni */
+
+/* STYLESHEET TABLE OF CONTENTS
+    1 General setup
+        1.1 Imports
+        1.2 Variables
+    2 General styling
+        2.1 Page wide
+        2.2 Text styling
+    3 Page sections
+        3.1 Cards
+        3.2 Partners
+    4 Desktop styling
+    5 Partner coloring
+    6 Element specific styling
+ */
+
+/* 1.1 Imports */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
-/* Variables */
-html
+/* 1.2 Variables */
+:root
 {
     --light: 240, 239, 244;
     --dark: 22, 25, 37;
 }
 
-/* General styling */
+/* 2.1 Page wide */
 body
 {
     font-family: 'Nunito', sans-serif;
@@ -24,13 +41,7 @@ body
     color: rgb(var(--dark));
 }
 
-/* Link to old design */
-#old
-{
-    display: none;
-}
-
-/* Text styling */
+/* 2.2 Text styling */
 body > h1
 {
     font-size: 4em;
@@ -48,7 +59,7 @@ body > p
     transition: 300ms ease;
 }
 
-/* Card styling */
+/* 3.1 Cards */
 #cards
 {
     display: flex;
@@ -71,12 +82,11 @@ a
     transform: translate(0, 20px);
 }
 
-/* Toasts (small cards) styling */
+/* 3.2 Partners */
 #toasts
 {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2rem;
 }
 
 #toasts > a
@@ -111,7 +121,7 @@ a img
     margin-bottom: -1em;
 }
 
-/* Desktop styling */
+/* 4 Desktop styling */
 @media only screen and (min-width: 750px)
 {
     #welcome
@@ -190,7 +200,7 @@ a img
     }
 }
 
-/* Partner coloring */
+/* 5 Partner coloring */
 #little { background: #9c92c8; }
 #mrcat { background: #00a7e1; }
 #soni { background: #3ba3a1; }
@@ -203,3 +213,9 @@ a img
 #patrick { background: #1c2541; }
 #katrine { background: #866369; }
 #elias { background: #0895ca; }
+
+/* 6 Element specific styling */
+#old
+{
+    display: none;
+}
