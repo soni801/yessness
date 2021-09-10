@@ -6,20 +6,6 @@ html
 {
     --light: 240, 239, 244;
     --dark: 22, 25, 37;
-
-    --little: #9c92c8;
-    --mrcat: #00a7e1;
-    --soni: #3ba3a1;
-
-    --henrik: #ed0929;
-    --erik: #355c3e;
-    --kristoffer: #66729d;
-    --kristian: #242424;
-    --ellinor: #38023b;
-    --anders: #34646d;
-    --patrick: #1c2541;
-    --katrine: #866369;
-    --elias: #0895ca;
 }
 
 /* General styling */
@@ -204,16 +190,16 @@ a img
     }
 }
 
-/* Partner specific styling */
-#little { background: var(--little); }
-#mrcat { background: var(--mrcat); }
-#soni { background: var(--soni); }
-#henrik { background: var(--henrik); }
-#erik { background: var(--erik); }
-#kristoffer { background: var(--kristoffer); }
-#kristian { background: var(--kristian); }
-#ellinor { background: var(--ellinor); }
-#anders { background: var(--anders); }
-#patrick { background: var(--patrick); }
-#katrine { background: var(--katrine); }
-#elias { background: var(--elias); }
+/* Partner coloring */
+#little { background: #9c92c8; }
+#mrcat { background: #00a7e1; }
+#soni { background: #3ba3a1; }
+#henrik { background: #ed0929; }
+#erik { background: #355c3e; }
+#kristoffer { background: #66729d; }
+#kristian { background: #242424; }
+#ellinor { background: #38023b; }
+#anders { background: #34646d; }
+#patrick { background: #1c2541; }
+#katrine { background: #866369; }
+#elias { background: #0895ca; }
