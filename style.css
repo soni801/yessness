@@ -7,8 +7,8 @@ html
     --light: 240, 239, 244;
     --dark: 22, 25, 37;
 
-    --little: #171752;
-    --mrcat: #fbb22c;
+    --little: #9c92c8;
+    --mrcat: #00a7e1;
     --soni: #3ba3a1;
 
     --henrik: #bc4d3b;
@@ -211,70 +211,15 @@ a img
 }
 
 /* Partner specific styling */
-#little
-{
-    background: var(--little);
-    color: rgb(var(--light));
-}
-
-#mrcat
-{
-    background: var(--mrcat);
-}
-
-#soni
-{
-    background: var(--soni);
-}
-
-#henrik
-{
-    background: var(--henrik);
-}
-
-#erik
-{
-    background: var(--erik);
-    color: rgb(var(--light));
-}
-
-#kristoffer
-{
-    background: var(--kristoffer);
-    color: rgb(var(--light));
-}
-
-#kristian
-{
-    background: var(--kristian);
-    color: rgb(var(--light));
-}
-
-#ellinor
-{
-    background: var(--ellinor);
-}
-
-#anders
-{
-    background: var(--anders);
-    color: rgb(var(--light));
-}
-
-#patrick
-{
-    background: var(--patrick);
-    color: rgb(var(--light));
-}
-
-#katrine
-{
-    background: var(--katrine);
-    color: rgb(var(--light));
-}
-
-#elias
-{
-    background: var(--elias);
-    color: rgb(var(--light));
-}
+#little { background: var(--little); }
+#mrcat { background: var(--mrcat); }
+#soni { background: var(--soni); }
+#henrik { background: var(--henrik); }
+#erik { background: var(--erik); }
+#kristoffer { background: var(--kristoffer); }
+#kristian { background: var(--kristian); }
+#ellinor { background: var(--ellinor); }
+#anders { background: var(--anders); }
+#patrick { background: var(--patrick); }
+#katrine { background: var(--katrine); }
+#elias { background: var(--elias); }
