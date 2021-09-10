@@ -12,7 +12,6 @@
         3.2 Partners
     4 Desktop styling
     5 Partner coloring
-    6 Element specific styling
  */
 
 /* 1.1 Imports */
@@ -213,9 +212,3 @@ a img
 #patrick { background: #1c2541; }
 #katrine { background: #866369; }
 #elias { background: #0895ca; }
-
-/* 6 Element specific styling */
-#old
-{
-    display: none;
-}
