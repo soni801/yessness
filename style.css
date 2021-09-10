@@ -118,6 +118,11 @@ a img
     display: none;
 }
 
+.light-text
+{
+    color: rgb(var(--light));
+}
+
 /* Notice styling */
 #partners
 {
