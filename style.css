@@ -199,6 +199,8 @@ a img
     }
 }
 
+.dark-text { color: var(--dark) !important; }
+
 /* 5 Partner coloring */
 #little { background: #9c92c8; }
 #mrcat { background: #00a7e1; }
@@ -209,6 +211,6 @@ a img
 #kristian { background: #242424; }
 #ellinor { background: #38023b; }
 #anders { background: #34646d; }
-#patrick { background: #1c2541; }
+#patrick { background: #b4c8f0; }
 #katrine { background: #866369; }
 #elias { background: #0895ca; }
