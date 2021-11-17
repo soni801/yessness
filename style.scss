@@ -10,6 +10,7 @@
         3.2 Partners
     4 Desktop styling
     5 Partner coloring
+    6 Navigation
  */
 
 // 1.1 Imports
@@ -61,17 +62,21 @@ body > p
     height: min-content;
     justify-content: center;
     align-items: center;
+
+    a
+    {
+        margin: 0;
+        display: inline-block;
+        color: $dark;
+        text-shadow: rgba($dark, .25) 0 0 .5rem;
+        width: 100%;
+        text-align: left;
+    }
 }
 
 a
 {
-    margin: 0;
-    display: inline-block;
-    color: $dark;
     text-decoration: none;
-    text-shadow: rgba($dark, .25) 0 0 .5rem;
-    width: 100%;
-    text-align: left;
     opacity: 0;
     transform: translate(0, 20px);
 }
@@ -81,6 +86,19 @@ a
 {
     display: flex;
     flex-wrap: wrap;
+
+    a
+    {
+        margin: 0;
+        display: inline-block;
+        color: $dark;
+        text-decoration: none;
+        text-shadow: rgba($dark, .25) 0 0 .5rem;
+        width: 100%;
+        text-align: left;
+        opacity: 0;
+        transform: translate(0, 20px);
+    }
 }
 
 #toasts > a
@@ -145,22 +163,32 @@ a img
     {
         flex-direction: row;
         width: 95vw;
-    }
 
-    a
-    {
-        margin: 1rem;
-        border-radius: 3rem;
-        box-shadow: rgba($dark, .4) 0 0 2rem;
-        height: 100%;
-        max-width: 40ch;
-        transform-style: preserve-3d;
+        a
+        {
+            margin: 1rem;
+            border-radius: 3rem;
+            box-shadow: rgba($dark, .4) 0 0 2rem;
+            height: 100%;
+            max-width: 40ch;
+            transform-style: preserve-3d;
+        }
     }
 
     #toasts
     {
         display: initial;
         padding: 1em;
+
+        a
+        {
+            margin: 1rem;
+            border-radius: 3rem;
+            box-shadow: rgba($dark, .4) 0 0 2rem;
+            height: 100%;
+            max-width: 40ch;
+            transform-style: preserve-3d;
+        }
     }
 
     #toasts > a
@@ -218,3 +246,28 @@ a img
 #andreas { background: #42998f; }
 #helland { background: #a288e3; }
 #eidhammer { background: #0e2e44; }
+
+// 6 Navigation
+#navigation
+{
+    display: flex;
+    gap: .7rem;
+
+    a
+    {
+        padding: .5rem 1rem;
+        background: lighten($dark, 40);
+        color: $light;
+        border-radius: 2rem;
+
+        &:hover
+        {
+            background: lighten($dark, 25);
+        }
+
+        &:active
+        {
+            background: lighten($dark, 10);
+        }
+    }
+}
