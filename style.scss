@@ -16,11 +16,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
 // 1.2 Variables
-:root
-{
-    --light: 240, 239, 244;
-    --dark: 22, 25, 37;
-}
+$light: rgb(240, 239, 244);
+$dark: rgb(22, 25, 37);
 
 // 2.1 Page wide
 body
@@ -31,11 +28,11 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(var(--light));
+    background: $light;
     text-align: center;
     user-select: none;
     margin: 0;
-    color: rgb(var(--dark));
+    color: $dark;
 }
 
 // 2.2 Text styling
@@ -44,14 +41,14 @@ body > h1
     font-size: 4em;
     margin-bottom: -1.5rem;
     padding: 0;
-    text-shadow: rgba(var(--dark), .2) 0 0 1rem;
+    text-shadow: rgba($dark, .2) 0 0 1rem;
     opacity: 0;
     transition: 300ms ease;
 }
 
 body > p
 {
-    text-shadow: rgba(var(--dark), .1) 0 0 .5rem;
+    text-shadow: rgba($dark, .1) 0 0 .5rem;
     opacity: 0;
     transition: 300ms ease;
 }
@@ -70,9 +67,9 @@ a
 {
     margin: 0;
     display: inline-block;
-    color: rgb(var(--dark));
+    color: $dark;
     text-decoration: none;
-    text-shadow: rgba(var(--dark), .25) 0 0 .5rem;
+    text-shadow: rgba($dark, .25) 0 0 .5rem;
     width: 100%;
     text-align: left;
     opacity: 0;
@@ -91,7 +88,7 @@ a
     margin: 0;
     flex: 1 1 calc(50% - 2em);
     padding: 1em;
-    color: rgb(var(--light));
+    color: $light;
 }
 
 a > h1
@@ -114,7 +111,7 @@ a img
 
 #partners
 {
-    color: rgba(var(--dark), .6);
+    color: rgba($dark, .6);
     margin-bottom: -1em;
 }
 
@@ -154,7 +151,7 @@ a img
     {
         margin: 1rem;
         border-radius: 3rem;
-        box-shadow: rgba(var(--dark), .4) 0 0 2rem;
+        box-shadow: rgba($dark, .4) 0 0 2rem;
         height: 100%;
         max-width: 40ch;
         transform-style: preserve-3d;
@@ -170,7 +167,7 @@ a img
     {
         padding: .5em 1em;
         margin: .5em;
-        box-shadow: rgba(var(--dark), .2) 0 0 1rem;
+        box-shadow: rgba($dark, .2) 0 0 1rem;
         width: initial;
         height: initial;
     }
@@ -191,7 +188,7 @@ a img
     {
         display: unset;
         width: 100%;
-        box-shadow: rgba(var(--dark), .1) 0 0 .7rem;
+        box-shadow: rgba($dark, .1) 0 0 .7rem;
         border-radius: 3rem 3rem 0 0;
     }
 
@@ -203,7 +200,7 @@ a img
     }
 }
 
-.dark-text { color: var(--dark) !important; }
+.dark-text { color: $dark !important; }
 
 // 5 Partner coloring
 #little { background: #9c92c8; }
