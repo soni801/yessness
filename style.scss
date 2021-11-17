@@ -142,7 +142,7 @@ a img
         gap: 1ch;
     }
 
-    #old, #new
+    #old
     {
         display: unset;
         position: fixed;
@@ -151,12 +151,6 @@ a img
         width: unset;
         height: unset;
         box-shadow: unset;
-    }
-
-    #new
-    {
-        left: 0;
-        transform-origin: left;
     }
 
     #cards
